@@ -1,10 +1,15 @@
+body{
+    margin: 0;
+   padding:0;
+   box-sizing: border-box;
+}
 .container{
     display: grid;
     grid-template-columns: 600px 380px;
     align-content: center;
     justify-content: center;
     height: 705px;
-    background-color: rgb(240, 240, 248);
+    background-color: #f0f2f5;
     
 }
 .hr hr{
@@ -12,9 +17,8 @@
 }
 .grid-1{
     display: grid;
-    align-content: center;
-    justify-content: start;
-}
+
+}/*
 h2{
     color: rgb(0, 106, 245);
     font-size: 400%;
@@ -22,15 +26,27 @@ h2{
     font-weight: 900%;
     margin: 0;
 }
+*/
+#logo{
+    width: 320px;
+    height: 150px;
+    background-color: rgb(240, 240, 248);
+    margin-bottom:0px;
+}
+.caption{
+    margin-top:-100px;
+}
 h3{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 150;
+    font-family: 'Segoe UI';
+    font-weight: 430;
+    font-size:175%;
 }
 .grid-2{
     display: grid;
     padding: 15px;
     background-color: #fff;
     border-radius: 5px ;
+    box-shadow: 1px 1px 10px rgb(172 175 175);
 }
 #Username{
     border-radius: 5px;
@@ -69,20 +85,24 @@ h3{
     color: rgb(170, 165, 165);
 }
 #login{
-    background-color: rgb(0, 106, 245);
+    background-color: #1877f2;
     font-size: large;
     text-align: center;
     border-radius: 7px;
     width: 100%;
     margin-bottom: 20px;
     height:45px;
-    border: 1px solid rgb(0, 106, 245);
+    border: 1px solid #1877f2;
     color: #fff;
 }
 .forgot a{
     text-decoration: none;
-    color: rgb(0, 106, 245);
+    color:#1877f2;
+    font-family: sans-serif;
+    width: 160px;
+    font-size: 95%;
 }
+
 .forgot a:hover{
     text-decoration: underline;
 }
@@ -104,13 +124,13 @@ h3{
     margin-left:25px;
 }
 #create{
-    background-color: rgb(44, 177, 32);
+    background-color: #42b72a;
     border-radius: 7px;
     font-size: medium;
     font-weight: bold;
     height: 50px;
     width: 100%;
-    border: 1px solid rgb(44, 177, 32);
+    border: 1px solid #42b72a;
     color: #fff;
 }
 #create a{
@@ -135,27 +155,74 @@ h3{
     text-decoration: underline;
 }
 .lang p{
-    color: rgb(34, 31, 31);
+    color: #7d7e80;
     font-size: small;
 }
 .lang{
     display: grid;
-    width: 60%;
+    width: 70%;
     margin:1px auto 1px auto;
 }
 
 /*for medium phones and potrait tablets*/
-@media only screen and (max-width:600px){
+
+@media only screen and (min-width:250px){
     .container{
         display: inline-block;
-        width:100%;
-        height:670px;
+        width:110%;
+        height:610px;
     }
      .grid-1{
          display:grid;
          justify-content:center;
          text-align:center;
      }
+     #logo{
+         height:110px;
+         width:300px;
+    }
+    .caption{
+    margin-top:-35px;
+    }
+    h3{
+    font-family: 'Segoe UI';
+    font-weight: 340;
+    font-size:118%;
+    }
+    .page{
+        text-align:center;
+    }
+     .lang{
+         width:90%;
+     }
+     #copyright{
+         text-align:center;
+     }
+ }
+
+
+@media only screen and (min-width:350px){
+    .container{
+        display: inline-block;
+        width:100%;
+        height:630px;
+    }
+     .grid-1{
+         display:grid;
+         justify-content:center;
+         text-align:center;
+     }
+     #logo{
+        margin-left:30px;
+    }
+    .caption{
+    margin-top:-35px;
+    }
+    h3{
+    font-family: 'Segoe UI';
+    font-weight: 380;
+    font-size:130%;
+    }
      .lang{
          width:90%;
      }
@@ -172,11 +239,17 @@ h3{
         display:grid;
         justify-content:center;
     }
-    .textlogo{
-        text-align:center;
+    #logo{
+        margin-left:30px;
     }
-    .caption{
-        text-align:center;
+     .caption{
+    margin-top:-48px;
+         text-align:center;
+    }
+    h3{
+    font-family: 'Segoe UI';
+    font-weight: 380;
+    font-size:140%;
     }
     .above-grid-2{
         display:grid;
@@ -193,21 +266,31 @@ h3{
 @media only screen and (min-width:1090px){
     .container{
         display: grid;
-    grid-template-columns: 600px 380px;
-        grid-gap:100px;
+    grid-template-columns: 650px 520px;
+    height: 730px;
+       
     }
-    .textlogo{
-        text-align:left;
+    #logo{
+        margin-left:0px;
     }
     .caption{
-        text-align:left;
-    }
+    margin-top:-100px;
+    text-align:left;
+}
+h3{
+    font-family: 'Segoe UI';
+    font-weight: 430;
+    font-size:175%;
+    margin-left:30px;
+}
     .grid-1{
         height:250px;
-        margin-right: 180px;
     }
     .lang{
-        width:55%;
+        width:51%;
+    }
+    #copyright{
+        text-align: left;
     }
     
 }
